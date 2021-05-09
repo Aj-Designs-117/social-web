@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | Web</title>
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- FONT ICONS -->
+	<script src="https://kit.fontawesome.com/001e4f22f5.js" crossorigin="anonymous"></script>
+</head>
+<body class="wrapper" id="dark-them-night">
+
+    <nav class="nav" id="home-posts">
+        <div class="nav__menu">
+            <i class="fab fa-rocketchat nav__logo-menu"></i>
+            <div class="nav__spacer"></div>
+            <img src="img/me.jpg" alt="profile" class="nav__profile">
+            <span class="nav__profile--name">Jhon</span>
+            <div class="nav__links">
+                <a data-tab-target="#home" class="nav__item"><i class="fas fa-home"></i></a>
+                <a data-tab-target="#message" class="nav__item"><i class="fas fa-envelope"></i></a>
+                <a data-tab-target="#users" class="nav__item"><i class="fas fa-users"></i></a>
+            </div>
+            <div class="nav__settings" id="switch">
+                <div class="nav__settings--spacer"></div>
+                <span class="nav__settings--title">Dark Mode</span>
+                <i class="far fa-moon nav__settings--icon-dark"></i>
+            </div>
+        </div>
+
+        <div class="nav__logo" id="logo-sidebar">
+            <i class="fab fa-rocketchat nav__icon-chat"></i>
+        </div>
+
+        <!-- LIST OF MESSAGES -->
+        <div class="nav__list-message" id="message" data-tab-content>
+            <div class="nav__list-header">
+                <h1 class="nav__list-header--title">Messages <span class="nav__list-message--badges">1</span></h1>
+                <form action="">
+                    <div class="nav__list-header--form-group">
+                        <button class="nav__list-header--icon-search"><i class="fas fa-search"></i></button>
+                        <input type="text" class="nav__list-header--input-search" placeholder="Buscar un chat">
+                    </div>
+                </form>
+            </div>
+            <small class="nav__list-message--section">Personal</small>
+
+            <div data-room="#user1">
+                <div class="nav__card-room--content">
+                    <img src="img/user-1.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Elver gazo <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                        <span class="nav__card-room--message">Lorem ipsum dolor sit amet...</span>
+                    </div>
+                </div>
+                <span class="nav__list-message--spacer"></span>
+            </div>
+
+            <div data-room="#user2">
+                <div class="nav__card-room--content">
+                    <img src="img/user-2.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Brynn Willis <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                        <span class="nav__card-room--message">Lorem ipsum dolor sit amet...</span>
+                    </div>
+                </div>
+                <span class="nav__list-message--spacer"></span>
+            </div>
+
+            <div >
+                <div class="nav__card-room--content">
+                    <img src="img/user-3.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Denis Albert <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                        <span class="nav__card-room--message nav__item-bolder">Lorem ipsum dolor sit amet...</span>
+                    </div>
+                </div>
+                <span class="nav__list-message--spacer"></span>
+            </div>
+        </div>
+        <!-- END OF MESSAGES -->
+
+        <!-- LIST OF CONTACTS -->
+        <div class="nav__list-users" id="users" data-tab-content>
+            <div class="nav__list-header">
+                <h1 class="nav__list-header--title">Contacts</h1>
+                <form action="">
+                    <div class="nav__list-header--form-group">
+                        <button class="nav__list-header--icon-search"><i class="fas fa-search"></i></button>
+                        <input type="text" class="nav__list-header--input-search" placeholder="Buscar un chat">
+                    </div>
+                </form>
+            </div>
+
+            <div class="nav__card-room" data-room="#user1">
+                <div class="nav__card-room--content">
+                    <img src="img/user-1.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Elver gazo <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__list-message--spacer"></div>
+            </div>
+
+            <div class="nav__card-room" data-room="#user2">
+                <div class="nav__card-room--content">
+                    <img src="img/user-2.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Brynn Willis <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__list-message--spacer"></div>
+            </div>
+
+            <div class="nav__card-room">
+                <div class="nav__card-room--content">
+                    <img src="img/user-3.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Denis Albert <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__list-message--spacer"></div>
+            </div>
+            
+            <div class="nav__card-room">
+                <div class="nav__card-room--content">
+                    <img src="img/user-4.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Gerd Frank <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__list-message--spacer"></div>
+            </div>
+
+            <div class="nav__card-room">
+                <div class="nav__card-room--content">
+                    <img src="img/user-5.jpg" alt="user" class="nav__card-room--img">
+                    <div class="nav__card-body">
+                        <div class="nav__card-room--info">
+                            <h1 class="nav__card-room--title">Anina Vinzent <span class="nav__card-room--active"></span> </h1>
+                            <span class="nav__card-room--time">5 min ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__list-message--spacer"></div>
+            </div>
+
+        </div>
+        <!-- END OF CONTACTS -->
+    </nav>
+
+    <!-- LIST OF POSTS -->
+    <div class="posts" id="home" data-tab-content>
+        <div class="row">
+            <div class="col-7">
+                <div class="post__content">
+
+                    <div class="post__card">
+                        <div class="post__header">
+                            <div class="post__description">
+                                <img src="img/user-1.jpg" alt="" class="post__header-img">
+                                <div class="post__profile-body">
+                                    <span class="post__header-name">Elver gazo</span>  
+                                    <span class="post__time-public">Wed, 26 may 2021</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-ellipsis-h post__profile-icon"></i>
+                        </div>
+                        <div class="post__info">
+                            <p class="post__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+                        </div>
+                        <img src="img/posts/post-1.jpg" alt="" class="post__img">
+                        <div class="post__card-body">
+                            <div class="post__reactions">
+                                <i class="fab fa-gratipay post__emoticon post__emoticon--like"></i>
+                                <i class="fas fa-comments post__emoticon post__emoticon--comments"></i>
+                                <i class="fas fa-share post__emoticon post__emoticon--share"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__card">
+                        <div class="post__header">
+                            <div class="post__description">
+                                <img src="img/user-5.jpg" alt="" class="post__header-img">
+                                <div class="post__profile-body">
+                                    <span class="post__header-name">Anina Vinzent</span>  
+                                    <span class="post__time-public">Wed, 26 may 2021</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-ellipsis-h post__profile-icon"></i>
+                        </div>
+                        <div class="post__info">
+                            <p class="post__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+                        </div>
+                        <iframe src="img/posts/post-2.mp4" class="post__img" autoplay controls></iframe>
+                        <div class="post__card-body">
+                            <div class="post__reactions">
+                                <i class="fab fa-gratipay post__emoticon post__emoticon--like"></i>
+                                <i class="fas fa-comments post__emoticon post__emoticon--comments"></i>
+                                <i class="fas fa-share post__emoticon post__emoticon--share"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__card">
+                        <div class="post__header">
+                            <div class="post__description">
+                                <img src="img/user-3.jpg" alt="" class="post__header-img">
+                                <div class="post__profile-body">
+                                    <span class="post__header-name">Denis Albert</span>  
+                                    <span class="post__time-public">Wed, 01 may 2021</span>
+                                </div>
+                            </div>
+                            <i class="fas fa-ellipsis-h post__profile-icon"></i>
+                        </div>
+                        <div class="post__info">
+                            <p class="post__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, qui.</p>
+                        </div>
+                        <img src="img/posts/post-3.jpg" alt="" class="post__img">
+                        <div class="post__card-body">
+                            <div class="post__reactions">
+                                <i class="fab fa-gratipay post__emoticon post__emoticon--like"></i>
+                                <i class="fas fa-comments post__emoticon post__emoticon--comments"></i>
+                                <i class="fas fa-share post__emoticon post__emoticon--share"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="notifications">
+                    <h1 class="notifications__title">Notifications</h1>
+                    <div class="notifications__card">
+                        <span class="notifications__breadcrumb">Today</span>
+                        <div class="notifications__body">
+                            <img src="img/user-1.jpg" alt="" class="notifications__img">
+                            <p class="notifications__description"><b>Elver gazo</b> mentioned you in a comment in the project Designs</p>
+                            <span class="notifications__time">5 min</span>
+                        </div>
+                        <div class="notifications__body">
+                            <img src="img/user-3.jpg" alt="" class="notifications__img">
+                            <p class="notifications__description"><b>Denis Albert</b> liked your post</p>
+                            <span class="notifications__time">2 min</span>
+                        </div>
+                        <div class="notifications__body">
+                            <img src="img/user-5.jpg" alt="" class="notifications__img">
+                            <p class="notifications__description"><b>Anina Vinzent</b> has shared your post</p>
+                            <span class="notifications__time">1 hours</span>
+                        </div>
+                        <span class="notifications__breadcrumb">Yesterday</span>
+                        <div class="notifications__body">
+                            <img src="img/user-2.jpg" alt="" class="notifications__img">
+                            <p class="notifications__description"><b>Brynn Willis</b> has invited you to the project Inovation</p>
+                            <span class="notifications__time">30 min</span>
+                        </div>
+                        <div class="notifications__body">
+                            <img src="img/user-4.jpg" alt="" class="notifications__img">
+                            <p class="notifications__description"><b>Gerd Frank</b> has invited you to the project Inovation</p>
+                            <span class="notifications__time">45 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LIST OF POSTS -->
+
+    <!-- ROOM USER 1 -->
+    <div class="salas" id="user1" data-salas>
+        <div class="room">
+            <div class="room__card">
+                <img src="img/user-1.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus atque culpa possimus ex labore explicabo est debitis tenetur natus?</p>
+                    <span class="room__time">2 hours ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">1 min ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card">
+                <img src="img/user-1.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus.</p>
+                    <span class="room__time">5 min ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">1 hours ago</span>
+                </div>
+            </div>
+
+            <div class="room__card">
+                <img src="img/user-1.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="room__time">2 min ago</span>
+                </div>
+            </div>
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">2 hours ago</span>
+                </div>
+            </div>
+
+            <div class="room__card">
+                <img src="img/user-1.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur.</p>
+                    <span class="room__time">2 hours ago</span>
+                </div>
+            </div>
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur.</p>
+                    <span class="room__time room__time--right">30 min ago</span>
+                </div>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="send__content">
+                <div class="send__content--form-group">
+                    <input type="text" class="send__content--input" placeholder="type your message...">
+                    <i class="fas fa-paperclip send__content--icons"></i>
+                    <i class="fas fa-images send__content--icons"></i>
+                </div>
+            
+                <button class="send__content--icon-send"><i class="far fa-paper-plane "></i></button>
+           
+            </div>
+        </form>
+    </div>
+    <!-- END ROOM USER 1 -->
+
+    <!-- ROOM USER 2 -->
+    <div class="salas" id="user2" data-salas>
+        <div class="room">
+            <div class="room__card">
+                <img src="img/user-2.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus atque culpa possimus ex labore explicabo est debitis tenetur natus?</p>
+                    <span class="room__time">2 hours ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">1 min ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card">
+                <img src="img/user-2.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam voluptatibus.</p>
+                    <span class="room__time">5 min ago</span>
+                </div>
+            </div> 
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">1 hours ago</span>
+                </div>
+            </div>
+
+            <div class="room__card">
+                <img src="img/user-2.jpg" alt="users" class="room__img">
+                <div class="room__body">
+                    <p class="room__messeage">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <span class="room__time">2 min ago</span>
+                </div>
+            </div>
+
+            <div class="room__card room__card--right">
+                <div class="room__body">
+                    <p class="room__messeage--right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsam? </p>
+                    <span class="room__time room__time--right">2 hours ago</span>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <form action="">
+            <div class="send__content">
+                <div class="send__content--form-group">
+                    <input type="text" class="send__content--input" placeholder="type your message...">
+                    <i class="fas fa-paperclip send__content--icons"></i>
+                    <i class="fas fa-images send__content--icons"></i>
+                </div>
+                <button class="send__content--icon-send"><i class="far fa-paper-plane "></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- END ROOM USER 2 -->
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+html {
+    --spacer-xxs:5px;
+    --spacer-xs:10px;
+    --spacer-s:15px;
+    --spacer-m:20px;
+    --spacer-l:25px;
+    --spacer-xl:30px;
+    --spacer-1xl:35px;
+    --spacer-2xl:45px;
+    --spacer-3xl:50px;
+    --spacer-4xl:55px;
+    --spacer-4xl:55px;
+    --spacer-5xl:60px;
+    --spacer-6xl:65px;
+    --spacer-7xl:70px;
+    --spacer-8xl:80px;
+
+    --spacer-xxl:100px;
+    --spacer-1xxl:130px;
+    --spacer-2xxl:160px;
+    --spacer-3xxl:190px;
+}
+  

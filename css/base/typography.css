@@ -1,0 +1,64 @@
+/* =======================================
+    * CUSTOM TYPOGRAPHY 
+=========================================*/
+
+body{
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: var(--w-5);
+    line-height: 1.2;
+}
+
+h1, .h1{font-size: var( --text-responsive-h1)}
+h2, .h2{font-size: var(--text-responsive-h2)}
+h3, .h3{font-size: var(--text-responsive-h3)}
+h4, .h4{font-size: var(--text-responsive-h4)}
+h5, .h5{font-size: var(--text-responsive-h5)}
+h6, .h6{font-size: var(--text-responsive-h6)}
+
+p{
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+small{font-size: 0.875em;}
+
+b, 
+strong{
+    font-weight: var(--w-b);
+}
+
+hr{
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+}
+
+hr:not([size]) {
+    height: 1px;
+}
+
+.display-1, 
+.display-2, 
+.display-3, 
+.display-4, 
+.display-5, 
+.display-6{
+    font-weight: var(--w-3);
+    line-height: 1.2;
+}
+.display-1{font-size: var(--display-responsive-1)}
+.display-2{font-size: var(--display-responsive-2);}
+.display-3{font-size: var(--display-responsive-3);}
+.display-4{font-size: var(--display-responsive-4);}
+.display-5 {font-size: var(--display-responsive-5);} 
+.display-6 {font-size:var(--display-responsive-6);}

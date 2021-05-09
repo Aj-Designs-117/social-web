@@ -1,0 +1,24 @@
+/* =======================================
+    * RESET DOCUMENT HTML 
+=========================================*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--white-color);
+    color: #212529;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.wrapper{ display: grid; grid-template-columns: 400px auto; }
+.wrapper__switch{ display: grid; grid-template-columns: 100px auto !important; }
+
+
+
