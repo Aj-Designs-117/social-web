@@ -4,4 +4,3 @@
 
 - Tema: Chat Social Web
 - Desarrollado por Aj&Designs
-- Ing. Mecatronico y diseñador Web
